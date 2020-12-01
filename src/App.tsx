@@ -7,7 +7,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       {winner && <Text>Winner is: {winner}</Text>}
-      {gameStatus === 'tie' && <Text>Tie</Text>}
+      {gameStatus === 'tie' && <Text>Tie, try again!</Text>}
       <View style={styles.board}>
         {board.map((value, index) => (
           <TouchableOpacity
